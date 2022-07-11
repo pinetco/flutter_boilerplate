@@ -17,7 +17,6 @@ void main() async {
 
   //Remote config
   await RemoteConfigService().init();
-  //await GoogleApiService().setGoogleMapApiKey(env['googleApiKey']);
 
   //Global controller
   Get.put(AppController());
@@ -38,7 +37,7 @@ class MyApp extends StatelessWidget {
       translations: Language(),
       locale: const Locale('en', 'EN'),
       fallbackLocale: const Locale('de', 'EN'),
-      title: "Care Rockets",
+      title: "Your App Name",
       home: SplashScreen(),
       getPages: appRoute.getPages,
       unknownRoute: GetPage(name: '/page404', page: () => const Page404()),
