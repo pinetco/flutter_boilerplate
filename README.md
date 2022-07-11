@@ -1,7 +1,6 @@
 
 
 # Highlights
------------------------
 - Flutter 3.0
 - Getx
 - Firebase
